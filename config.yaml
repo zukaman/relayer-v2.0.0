@@ -19,7 +19,7 @@ chains:
             output-format: json
             sign-mode: sync
             strategy:
-            type: naive
+            type: native
             version: ics20-1
             order: UNORDERED
     stride:
@@ -37,7 +37,7 @@ chains:
             output-format: json
             sign-mode: sync
             strategy:
-            type: naive
+            type: native
             version: ics20-1
             order: UNORDERED
 paths:
