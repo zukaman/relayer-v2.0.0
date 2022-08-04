@@ -1,4 +1,4 @@
-# Set up a v2.0.0-rc4 relayer 
+# Set up a v2.0.0
 (This guide was created in collaboration with goooodnes#8929)
 <br>
 
@@ -102,7 +102,7 @@ chains:
             version: ics20-1
             order: UNORDERED
 paths:
-    conf:
+    task:
         src:
             chain-id: STRIDE-TESTNET-2
             client-id: 07-tendermint-0
@@ -134,39 +134,27 @@ EOF
 ```
 
 ## Import  keys for the relayer to use when signing and relaying transactions
-Replace `<key name>` and insert your mnemonic phrase
    ```
-     rly keys restore stride <key name> "mnemonic words here"
-     rly keys restore GAIA <key name> "mnemonic words here"
+     rly keys restore stride $KEY2 "mnemonic words here"
+     rly keys restore GAIA $KEY1 "mnemonic words here"
    ```
-## Make changes to config.yaml
-```
-     nano $HOME/.relayer/config/config.yaml
-```
-Set a memo to identify your relay. Replace `<your discord name>` on your values.
-<br>
-Replace `<your key name>`  with the name of the keys specified in the previous paragraph.
-<br>
-Then you need to change the IP addresses of your nodes and RPC ports
-
 ## Create go-v2 relayer service file
  (copy and paste into the terminal with one command)
 ```
-     sudo tee /etc/systemd/system/rlyd.service > /dev/null <<EOF
-     [Unit]
-     Description=HERMES
-     After=network.target
-     [Service]
-     Type=simple
-     User=$USER
-     ExecStart=$(which rly) start task --log-format logfmt --processor events
-
-     Restart=on-failure
-     RestartSec=10
-     LimitNOFILE=4096
-     [Install]
-     WantedBy=multi-user.target
-     EOF
+sudo tee /etc/systemd/system/rlyd.service > /dev/null <<EOF
+[Unit]
+Description=Relayer_v2
+After=network.target
+[Service]
+Type=simple
+User=$USER
+ExecStart=$(which rly) start task --log-format logfmt --processor events
+Restart=on-failure
+RestartSec=10
+LimitNOFILE=4096
+[Install]
+WantedBy=multi-user.target
+EOF
 ```
 
 ## Start service
