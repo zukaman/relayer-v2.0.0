@@ -49,9 +49,11 @@ wget -O $HOME/.relayer/config/config.yaml https://raw.githubusercontent.com/zuka
 ```
 nano $HOME/.relayer/config/config.yaml
 ```
-Set a memo to identify your relay. Replace `<your discord name>` on your values
-You need to change the IP addresses of your nodes and RPC ports
-Replace `<your key name>`  with the name of the keys specified in the previous paragraph
+Set a memo to identify your relay. Replace `<your discord name>` on your values.
+<br>
+Replace `<your key name>`  with the name of the keys specified in the previous paragraph.
+<br>
+Then you need to change the IP addresses of your nodes and RPC ports
 
 ## Create go-v2 relayer service file
  (copy and paste into the terminal with one command)
