@@ -44,9 +44,10 @@ In current example we will learn how to set up IBC relayer between two cosmos ch
 ```
 
 ## Import  keys for the relayer to use when signing and relaying transactions
+Replace `<key name>` and insert your mnemonic phrase
    ```
-     rly keys restore stride [key-name] "mnemonic words here"
-     rly keys restore GAIA [key-name] "mnemonic words here"
+     rly keys restore stride <key name> "mnemonic words here"
+     rly keys restore GAIA <key name> "mnemonic words here"
    ```
 ## Make changes to config.yaml
 ```
