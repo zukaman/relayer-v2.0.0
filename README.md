@@ -8,13 +8,24 @@ sudo apt update && sudo apt upgrade -y
 
 ## Install dependencies
 ```
-sudo apt install unzip -y
+sudo apt install wget git make htop unzip -y
 ```
-
-## Make hermes home dir
+## Install GO 1.18.3 | ONE COMMAND
+```
+cd $HOME && \
+ver="1.18.3" && \
+wget "https://golang.org/dl/go$ver.linux-amd64.tar.gz" && \
+sudo rm -rf /usr/local/go && \
+sudo tar -C /usr/local -xzf "go$ver.linux-amd64.tar.gz" && \
+rm "go$ver.linux-amd64.tar.gz" && \
+echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_profile && \
+source $HOME/.bash_profile && \
+go version
+```
+## Make relayer home dir
 ```
 cd $HOME
-mkdir -p $HOME/.hermes/bin
+mkdir -p $HOME/.relayer/config
 ```
 
 ## Download go-v2 relayer
