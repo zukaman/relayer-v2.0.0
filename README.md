@@ -1,4 +1,7 @@
-# Set up a v2.0.0-rc4 relayer (This guide was created in collaboration with goooodnes#8929)
+# Set up a v2.0.0-rc4 relayer 
+(This guide was created in collaboration with goooodnes#8929)
+<br>
+
 In current example we will learn how to set up IBC relayer between two cosmos chains
 
 ## Update system
