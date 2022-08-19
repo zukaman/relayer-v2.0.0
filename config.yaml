@@ -63,13 +63,13 @@ paths:
             chain-id: STRIDE-TESTNET-2
             client-id: 07-tendermint-0
             connection-id: connection-0
-            port-id: icacontroller-GAIA.DELEGATION,transfer,icacontriiler-GAIA.FEE,icacontroller-GAIA.WITHDRAWAL,icacontroller-GAIA.REDEMPTION
+            port-id: icacontroller-GAIA.DELEGATION,transfer,icacontroller-GAIA.FEE,icacontroller-GAIA.WITHDRAWAL,icacontroller-GAIA.REDEMPTION
   
         dst:
             chain-id: GAIA
             client-id: 07-tendermint-0
             connection-id: connection-0
-            port-id: icahost,icacontroller-GAIA.DELEGATION,transfer,icacontriiler-GAIA.FEE,icacontroller-GAIA.WITHDRAWAL,icacontroller-GAIA.REDEMPTION
+            port-id: icahost,icacontroller-GAIA.DELEGATION,transfer,icacontroller-GAIA.FEE,icacontroller-GAIA.WITHDRAWAL,icacontroller-GAIA.REDEMPTION
         src-channel-filter:
             rule: allowlist
             channel-list:
