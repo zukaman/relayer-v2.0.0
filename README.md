@@ -87,7 +87,7 @@ chains:
         type: cosmos
         value:
             key: $KEY2
-            chain-id: STRIDE-TESTNET-2
+            chain-id: STRIDE-TESTNET-4
             rpc-addr: http://$IP2:$PORT2
             account-prefix: stride
             keyring-backend: test
