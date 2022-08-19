@@ -34,7 +34,7 @@ In current example we will learn how to set up IBC relayer between two cosmos ch
 ## Download go-v2 relayer
 ```
      git clone https://github.com/cosmos/relayer.git
-     cd relayer && git checkout v2.0.0
+     cd relayer
      make install
  
 ```
