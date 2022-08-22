@@ -24,12 +24,7 @@ In current example we will learn how to set up IBC relayer between two cosmos ch
      echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_profile && \
      source $HOME/.bash_profile && \
      go version
-```
-## Make relayer home dir
-```
-     cd $HOME
-     mkdir -p $HOME/.relayer/config
-```
+
 
 ## Download go-v2 relayer
 ```
