@@ -98,7 +98,7 @@ chains:
 paths:
     task:
         src:
-            chain-id: STRIDE-TESTNET-2
+            chain-id: STRIDE-TESTNET-4
             client-id: 07-tendermint-0
             connection-id: connection-0
             port-id: icacontroller-GAIA.DELEGATION,transfer,icacontroller-GAIA.FEE,icacontroller-GAIA.WITHDRAWAL,icacontroller-GAIA.REDEMPTION
